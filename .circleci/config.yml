@@ -1,7 +1,7 @@
 version: 2
 jobs:
    build:
-     working_directory: ~/DevOps_Microservices/project-ml-microservice-kubernetes
+     working_directory: ~/DevOps_Microservices/project-ml-microservice-kubernetes/
      docker:
        - image: python:3.7.3-stretch
      steps:
@@ -15,6 +15,8 @@ jobs:
            command: |
              python3 -m venv venv
              . venv/bin/activate
+             ls -ltr
+             pwd
              make install
              wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
              chmod +x /bin/hadolint

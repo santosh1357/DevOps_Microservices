@@ -1,5 +1,4 @@
-<include a CircleCI status badge, here>
-
+[![CircleCI](https://circleci.com/gh/santosh1357/DevOps_Microservices/tree/master.svg?style=svg)](https://circleci.com/gh/santosh1357/DevOps_Microservices/tree/master)
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 

@@ -8,11 +8,14 @@
 
 # Step 2
 # Run the Docker Hub container with kubernetes
+kubectl run prediction-pod --image=santosh1357/prediction-app:v2 --port=8000
 
 
 # Step 3:
 # List kubernetes pods
+kubectl get pods
 
 # Step 4:
-# Forward the container port to a host
+# Forward the container port to a host 
+kubectl port-forward pods/prediction-pod-57b5f76b56-qrzcq 8000:80
 
